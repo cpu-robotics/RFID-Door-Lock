@@ -10,15 +10,25 @@
 # P - PHP
 
 # Update the system
-sudo apt-get update
+sudo apt update
 
 # Install Apache web server
-sudo apt-get install apache2 -y
-
-# Install MySQL server
-sudo apt-get install mysql-server -y
+sudo apt install apache2 -y
 
 # Secure Install MySQL Server
 sudo mysql_secure_installation
+
 # Install php
-sudo apt-get install php -y
+sudo apt install php -y
+
+# Restart Apache
+sudo service apache2 restart
+
+# Install MySQL server
+sudo apt install mysql-server -y
+
+# Install PHP-MySQL
+sudo apt install php-mysql -y
+
+# Restart Apache
+sudo service apache2 restart
